@@ -1,0 +1,5 @@
+python-telegram-bot==22.6
+reportlab
+python-telegram-bot==20.7
+jinja2
+weasyprint
