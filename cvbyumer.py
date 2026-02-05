@@ -153,8 +153,8 @@ def generate_cv(uid: int) -> str:
 
 # ===== MAIN =====
 def main():
-    if not TOKEN:
-        raise RuntimeError("BOT_TOKEN missing")
+TOKEN = os.getenv("BOT_TOKEN") or "8520309436:AAFJbFy8cmz7ZLhcOhszVur7-qprL78UVx4"
+
 
     app = ApplicationBuilder().token(TOKEN).build()
     app.add_handler(CommandHandler("start", start))
@@ -163,3 +163,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
